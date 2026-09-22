@@ -1,5 +1,5 @@
 import { vitestServerPluginUimed } from "./src/plugins.ts";
-import path from "path";
+import { resolve } from "node:path";
 import { defineConfig } from "vite-plus";
 import vue from "@vitejs/plugin-vue";
 
@@ -59,8 +59,8 @@ export default defineConfig({
   fmt: {},
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "./src"),
-      "@e2e": path.resolve(__dirname, "./e2e"),
+      "@": resolve(__dirname, "./src"),
+      "@e2e": resolve(__dirname, "./e2e"),
     },
   },
   plugins: [vue()],
