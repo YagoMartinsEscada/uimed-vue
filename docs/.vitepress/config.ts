@@ -119,6 +119,7 @@ export default defineConfig({
               text: "Campos e formulários",
               items: [
                 { text: "Caixas de seleção", link: "/guide/components/checkbox" },
+                { text: "Campos de data e hora", link: "/guide/components/date-time-field" },
                 { text: "Campos de texto", link: "/guide/components/text-field" },
                 { text: "Formulários", link: "/guide/components/form" },
               ],
@@ -154,6 +155,7 @@ export default defineConfig({
           items: [
             { text: "UButton", link: "/api/components/button" },
             { text: "UCheckbox", link: "/api/components/checkbox" },
+            { text: "UDateTimeField", link: "/api/components/date-time-field" },
             {
               text: "Content Area",
               collapsed: false,
